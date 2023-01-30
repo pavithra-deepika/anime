@@ -7,7 +7,7 @@ export default function AnimeList({animes}) {
         <h1> Anime List</h1>
         <div>
             {animes.map(anime=>
-                <AnimeCard anime={anime} />)}
+                <AnimeCard key= {anime.id} anime={anime} />)}
             
         </div>
 
